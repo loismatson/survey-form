@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Customer Satisfaction Survey</></h1>
+      <p id="description">Please give us your feedback about our products!</p>
+    
+    <form id="survey-form">
+      <div>
+        <label id="name-label">Name:</label>
+          <input type="text" id="name" class="info" required placeholder="Enter your name">
+      </div>
+      <div>
+        <label id="email-label">Email:</label>
+          <input type="email" id="email" class="info" required placeholder="Enter your email">
+      </div>
+      <div>        
+        <label id="number-label">Age:</label>  
+          <input type="number" id="number" class="info" placeholder="Enter your age" required min="12" max="65">
+      </div>
+      
+      <div>  
+        <p for="references">Where did you hear about our products?</p>
+          <input list="dropdown" id="references" class="info">
+            <datalist id="dropdown">
+              <option value="Internet Ad">
+              <option value="Podcast">
+              <option value="Radio">
+              <option value="TV">
+              <option value="Other">
+            </datalist>
+      </div>
+
+      <div>
+        <p>How likely is it that you would recommend our products?</p>
+        <input type="radio" id="recommend" name="recommend" value="definitely would">
+          <label for="definitely-would">Definitely would</label>
+      </div>
+      <div>  
+        <input type="radio" id="recommend" name="recommend" value="likely would">
+          <label for="likely-would">Likely would</label>
+      </div>
+      <div>  
+        <input type="radio" id="recommend" name="recommend" value="likely wouldnt">
+          <label for="likely-would">Likely wouldn't</label>
+      </div>
+      <div>  
+        <input type="radio" id="recommend" name="recommend" value="definitely wouldnt">
+        <label for="definitely-wouldnt">Definitely wouldn't</label>
+      </div>               
+
+      <div>
+        <p>Which of our products do you use? (Check all that apply)</p>
+        <input type="checkbox" id="use" name="widget" value="widget">
+          <label for="widget">Widgets</label>
+      </div>
+      <div>  
+        <input type="checkbox" id="use" name="gidget" value="gidget">
+          <label for="gidget">Gidgets</label>
+      </div>
+      <div>     
+        <input type="checkbox" id="use" name="didget" value="didget">
+          <label for="didget">Didgets</label>
+      </div>
+      <div>  
+        <input type="checkbox" id="use" name="fidget" value="fidget">
+          <label for="fidget">Fidgets</label>
+      </div>
+
+      <div class="textarea">
+        <p>How could our products be improved?</p>
+        <textarea id="suggestion" name="suggestion" rows="10" columns="10" class="info">Enter your suggestion here</textarea>
+      </div>
+      <div>
+        <input type="submit" id="submit">
+      </div>
+    </form>
+  </body>
+</html>
+
