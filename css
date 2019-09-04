@@ -1,0 +1,42 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: cornsilk;
+}
+
+#title, #description {
+  display: block;
+  text-align: center;
+}
+
+#survey-form {
+  display: flex-block;
+  width: 510px;
+  height: auto;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 18;
+  border-radius: 3px;
+}
+
+.info {
+  display: flex;
+  width: 200px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+#name, #email, #number, #dropdown, #submit {
+  margin: 10px;
+  padding: 5px;
+}
+ 
+#recommend, #use {
+  margin: 5px;
+  padding: 5px;
+}
+
+#suggestion {
+  margin: 5px;
+  padding: 5px;
+}
